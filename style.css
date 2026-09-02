@@ -36,3 +36,12 @@ li {
     margin-top: 10px;
     padding: 10px;
 }
+/* Dark mode feature */
+body {
+    background: #222;
+    color: white;
+}
+
+.container {
+    background: #333;
+}
