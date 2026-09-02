@@ -6,19 +6,36 @@
     <title>Student Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
         <h1>Student Task Manager</h1>
 
+        <!-- Add Task -->
         <div class="input-area">
-            <input type="text" id="taskInput" placeholder="Enter a task">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task"
+            >
             <button onclick="addTask()">Add Task</button>
         </div>
 
+        <!-- Search Tasks -->
+        <div class="search-area">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search tasks..."
+            >
+        </div>
+
+        <!-- Task List -->
         <ul id="taskList"></ul>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
