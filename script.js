@@ -20,3 +20,18 @@ function addTask() {
 
     input.value = "";
 }
+
+
+// Search Tasks
+document.getElementById("searchInput").addEventListener("input", function () {
+    const searchText = this.value.toLowerCase();
+    const tasks = document.querySelectorAll("#taskList li");
+
+    tasks.forEach(function (task) {
+        if (task.textContent.toLowerCase().includes(searchText)) {
+            task.style.display = "list-item";
+        } else {
+            task.style.display = "none";
+        }
+    });
+});
